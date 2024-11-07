@@ -1,0 +1,121 @@
+{
+  "info": {
+    "_postman_id": "9e956891-db4c-4d0d-a7ad-6626d318656a",
+    "name": "DMC Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30494428"
+  },
+  "item": [
+    {
+      "name": "Listar usuarios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:666/api/users/list",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "666",
+          "path": [
+            "api",
+            "users",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear usuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"uid\":null,\"first_name\":\"John\",\"last_name\":\"Doe\",\"email\":\"a@a.com\",\"password\":\"12345678\",\"phone\":null,\"phone_2\":null,\"postal_code\":null,\"birth_date\":null,\"gender\":\"M\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:666/api/users/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "666",
+          "path": [
+            "api",
+            "users",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar usuario",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"uid\":null,\"first_name\":\"John\",\"last_name\":\"Doe\",\"email\":\"a@a.com\",\"password\":\"12345678\",\"phone\":null,\"phone_2\":null,\"postal_code\":null,\"birth_date\":null,\"gender\":\"M\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:666/api/users/update",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "666",
+          "path": [
+            "api",
+            "users",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar usuario",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:666/api/users/delete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "666",
+          "path": [
+            "api",
+            "users",
+            "delete"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

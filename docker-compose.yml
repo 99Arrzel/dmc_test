@@ -1,0 +1,9 @@
+services:
+  php:
+    container_name: php_dmc
+    build: .
+    ports:
+      - "666:80"
+    volumes:
+      - .:/var/www/html
+    
